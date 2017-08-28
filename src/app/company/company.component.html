@@ -1,0 +1,19 @@
+<div class="row">
+  <form class="col s12 center">
+
+    <span class="center grey-text"><h6>Add Company</h6></span>
+    <div class="row">
+      <div class="input-field col s12 offset-m3 m6">
+        <input id="compCode" name="compCode" [(ngModel)]="compCode" type="text" class="validate" placeholder="Please input your Company Code">
+        <label for="compCode">Company Code</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 offset-m3 m6">
+        <input id="compName" name="compName" [(ngModel)]="compName" type="text" class="validate" placeholder="Please input your Company Name">
+        <label for="compName">Company Name</label>
+      </div>
+    </div>
+    <a class="btn col s12" (click)="onSave();">Save</a>
+  </form>
+</div>

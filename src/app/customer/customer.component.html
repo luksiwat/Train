@@ -1,0 +1,25 @@
+<div class="row">
+  <form class="col s12 center">
+
+    <span class="center grey-text"><h6>Add Users</h6></span>
+    <div class="row">
+      <div class="input-field col s12 offset-m3 m6">
+        <input id="userCode" name="userCode" [(ngModel)]="userCode" type="text" class="validate" placeholder="Please input your Customer Code">
+        <label for="userCode">User Code</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12 offset-m3 m6">
+        <input id="userName" name="userName" [(ngModel)]="userName" type="text" class="validate" placeholder="Please input your Customer Name">
+        <label for="userName">User Name</label>
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="input-field col s12 offset-m3 m6">
+        <input id="userType" name="userType" [(ngModel)]="userType" type="text" class="validate" placeholder="Please input your User Type">
+        <label for="userType">User Type</label>
+      </div>
+    </div> -->
+    <a class="btn col s12" (click)="onSave();">Save</a>
+  </form>
+</div>
